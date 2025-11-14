@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details - Star Media Tech</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/courses.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-star"></i>
+                    Star Media Tech
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="consultant.html" class="nav-link">Consultant</a>
+                <a href="partners.html" class="nav-link">Partners</a>
+                <div class="nav-auth">
+                    <!-- Will be populated by authManager -->
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Course Hero Section -->
+    <section class="course-detail-hero">
+        <div class="container">
+            <div class="course-hero-content">
+                <div class="course-info" data-aos="fade-right">
+                    <div class="course-category">Web Development</div>
+                    <h1 id="course-title">Advanced Web Development</h1>
+                    <p class="course-description" id="course-description">
+                        Master modern web development technologies and build responsive, scalable web applications.
+                    </p>
+                    <div class="course-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-user"></i>
+                            <span id="instructor-name">Sarah Johnson</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span id="course-duration">48 hours</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-signal"></i>
+                            <span id="course-level">Advanced</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-users"></i>
+                            <span id="students-count">1,250 students</span>
+                        </div>
+                    </div>
+                    <div class="course-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-value" id="course-rating">4.8</span>
+                        <span class="rating-count">(420 reviews)</span>
+                    </div>
+                </div>
+                <div class="course-pricing" data-aos="fade-left">
+                    <div class="pricing-card">
+                        <div class="price-section">
+                            <div class="current-price" id="current-price">$149</div>
+                            <div class="original-price" id="original-price">$199</div>
+                            <div class="discount-badge">25% OFF</div>
+                        </div>
+                        <div class="enrollment-info">
+                            <div class="info-item">
+                                <i class="fas fa-play-circle"></i>
+                                <span>42 video lessons</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>15 practical exercises</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-infinity"></i>
+                                <span>Lifetime access</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Access on mobile</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificate of completion</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-enroll" id="enroll-btn">
+                            Enroll Now
+                        </button>
+                        <button class="btn btn-outline" id="wishlist-btn">
+                            <i class="far fa-heart"></i> Add to Wishlist
+                        </button>
+                        <div class="guarantee">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>30-day money-back guarantee</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Content Section -->
+    <section class="course-content-section">
+        <div class="container">
+            <div class="content-tabs">
+                <button class="tab-btn active" data-tab="overview">Overview</button>
+                <button class="tab-btn" data-tab="curriculum">Curriculum</button>
+                <button class="tab-btn" data-tab="instructor">Instructor</button>
+                <button class="tab-btn" data-tab="reviews">Reviews</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Overview Tab -->
+                <div class="tab-pane active" id="overview">
+                    <div class="overview-content">
+                        <div class="what-youll-learn">
+                            <h3>What You'll Learn</h3>
+                            <div class="learn-items">
+                                <div class="learn-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Build responsive web applications with React and Node.js</span>
+                                </div>
+                                <div class="learn-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Implement secure authentication and authorization</span>
+                                </div>
+                                <div class="learn-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Deploy applications to cloud platforms</span>
+                                </div>
+                                <div class="learn-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Optimize performance and SEO</span>
+                                </div>
+                                <div class="learn-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Implement testing and debugging strategies</span>
+                                </div>
+                                <div class="learn-item">
+                                    <i class="fas fa-check"></i>
+                                    <span>Work with databases and APIs</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course-requirements">
+                            <h3>Requirements</h3>
+                            <ul>
+                                <li>Basic understanding of HTML, CSS, and JavaScript</li>
+                                <li>Familiarity with programming concepts</li>
+                                <li>Computer with internet connection</li>
+                                <li>Willingness to learn and practice</li>
+                            </ul>
+                        </div>
+
+                        <div class="target-audience">
+                            <h3>Who This Course Is For</h3>
+                            <ul>
+                                <li>Aspiring web developers looking to advance their skills</li>
+                                <li>Frontend developers wanting to learn backend development</li>
+                                <li>Students pursuing a career in web development</li>
+                                <li>Professionals seeking to upgrade their skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Curriculum Tab -->
+                <div class="tab-pane" id="curriculum">
+                    <div class="curriculum-content">
+                        <div class="modules-list" id="modules-list">
+                            <!-- Modules will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instructor Tab -->
+                <div class="tab-pane" id="instructor">
+                    <div class="instructor-profile">
+                        <div class="instructor-header">
+                            <div class="instructor-avatar">
+                                <img src="../assets/images/instructors/sarah.jpg" alt="Sarah Johnson" onerror="this.src='../assets/images/default-avatar.png'">
+                            </div>
+                            <div class="instructor-info">
+                                <h3>Sarah Johnson</h3>
+                                <p class="instructor-title">Senior Full-Stack Developer</p>
+                                <div class="instructor-stats">
+                                    <div class="stat">
+                                        <div class="stat-number">4.8</div>
+                                        <div class="stat-label">Instructor Rating</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">12,540</div>
+                                        <div class="stat-label">Students</div>
+                                    </div>
+                                    <div class="stat">
+                                        <div class="stat-number">8</div>
+                                        <div class="stat-label">Courses</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="instructor-bio">
+                            <p>Sarah is a senior full-stack developer with over 10 years of experience in web development. She has worked with numerous startups and Fortune 500 companies, helping them build scalable web applications.</p>
+                            <p>Her expertise includes React, Node.js, Python, and cloud technologies. Sarah is passionate about teaching and has helped thousands of students launch their careers in web development.</p>
+                        </div>
+                        <div class="instructor-social">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-globe"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reviews Tab -->
+                <div class="tab-pane" id="reviews">
+                    <div class="reviews-content">
+                        <div class="reviews-summary">
+                            <div class="average-rating">
+                                <div class="rating-number">4.8</div>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="rating-count">Based on 420 reviews</div>
+                            </div>
+                            <div class="rating-distribution">
+                                <div class="distribution-bar">
+                                    <div class="star-label">5 stars</div>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 75%;"></div>
+                                    </div>
+                                    <div class="percentage">75%</div>
+                                </div>
+                                <div class="distribution-bar">
+                                    <div class="star-label">4 stars</div>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 18%;"></div>
+                                    </div>
+                                    <div class="percentage">18%</div>
+                                </div>
+                                <div class="distribution-bar">
+                                    <div class="star-label">3 stars</div>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 5%;"></div>
+                                    </div>
+                                    <div class="percentage">5%</div>
+                                </div>
+                                <div class="distribution-bar">
+                                    <div class="star-label">2 stars</div>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 1%;"></div>
+                                    </div>
+                                    <div class="percentage">1%</div>
+                                </div>
+                                <div class="distribution-bar">
+                                    <div class="star-label">1 star</div>
+                                    <div class="bar-container">
+                                        <div class="bar-fill" style="width: 1%;"></div>
+                                    </div>
+                                    <div class="percentage">1%</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reviews-list" id="reviews-list">
+                            <!-- Reviews will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Courses -->
+    <section class="related-courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Related Courses</h2>
+                <p class="section-subtitle">You might also be interested in these courses</p>
+            </div>
+            <div class="courses-grid" id="related-courses">
+                <!-- Related courses will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer as about.html -->
+    </footer>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/courses.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Course data
+        const courseData = {
+            id: '1',
+            title: 'Advanced Web Development',
+            description: 'Master modern web development technologies and build responsive, scalable web applications with React, Node.js, and modern frameworks.',
+            instructor: {
+                name: 'Sarah Johnson',
+                avatar: '../assets/images/instructors/sarah.jpg'
+            },
+            duration: '48 hours',
+            level: 'Advanced',
+            students: 1250,
+            rating: 4.8,
+            reviews: 420,
+            price: 149,
+            originalPrice: 199,
+            curriculum: [
+                {
+                    title: 'Introduction to Modern Web Development',
+                    lessons: [
+                        { title: 'Course Overview', duration: '15 min', type: 'video', free: true },
+                        { title: 'Setting Up Development Environment', duration: '30 min', type: 'video' },
+                        { title: 'Modern Web Architecture', duration: '25 min', type: 'video' }
+                    ]
+                },
+                {
+                    title: 'Frontend Development with React',
+                    lessons: [
+                        { title: 'React Fundamentals', duration: '45 min', type: 'video' },
+                        { title: 'Components and Props', duration: '35 min', type: 'video' },
+                        { title: 'State and Lifecycle', duration: '40 min', type: 'video' },
+                        { title: 'React Hooks', duration: '50 min', type: 'video' },
+                        { title: 'Building a React Application', duration: '60 min', type: 'project' }
+                    ]
+                },
+                {
+                    title: 'Backend Development with Node.js',
+                    lessons: [
+                        { title: 'Node.js Fundamentals', duration: '40 min', type: 'video' },
+                        { title: 'Express.js Framework', duration: '35 min', type: 'video' },
+                        { title: 'RESTful API Design', duration: '45 min', type: 'video' },
+                        { title: 'Database Integration', duration: '50 min', type: 'video' }
+                    ]
+                }
+            ],
+            reviews: [
+                {
+                    user: 'Michael Chen',
+                    rating: 5,
+                    comment: 'This course transformed my career! The projects were challenging but incredibly rewarding.',
+                    date: '2 weeks ago',
+                    avatar: 'MC'
+                },
+                {
+                    user: 'Emily Rodriguez',
+                    rating: 5,
+                    comment: 'Sarah is an amazing instructor. Her explanations are clear and the course material is up-to-date.',
+                    date: '1 month ago',
+                    avatar: 'ER'
+                },
+                {
+                    user: 'David Kim',
+                    rating: 4,
+                    comment: 'Great course overall. Would love to see more advanced topics covered in future updates.',
+                    date: '2 months ago',
+                    avatar: 'DK'
+                }
+            ]
+        };
+
+        // Related courses
+        const relatedCourses = [
+            {
+                title: 'React Masterclass',
+                category: 'web-development',
+                level: 'intermediate',
+                instructor: 'Mike Chen',
+                price: 129,
+                rating: 4.7,
+                students: 890
+            },
+            {
+                title: 'Node.js Backend Development',
+                category: 'web-development',
+                level: 'intermediate',
+                instructor: 'Sarah Johnson',
+                price: 119,
+                rating: 4.6,
+                students: 670
+            },
+            {
+                title: 'Full-Stack JavaScript',
+                category: 'web-development',
+                level: 'advanced',
+                instructor: 'David Wilson',
+                price: 179,
+                rating: 4.9,
+                students: 450
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Populate course data
+            document.getElementById('course-title').textContent = courseData.title;
+            document.getElementById('course-description').textContent = courseData.description;
+            document.getElementById('instructor-name').textContent = courseData.instructor.name;
+            document.getElementById('course-duration').textContent = courseData.duration;
+            document.getElementById('course-level').textContent = courseData.level;
+            document.getElementById('students-count').textContent = courseData.students.toLocaleString() + ' students';
+            document.getElementById('course-rating').textContent = courseData.rating;
+            document.getElementById('current-price').textContent = '$' + courseData.price;
+            document.getElementById('original-price').textContent = '$' + courseData.originalPrice;
+
+            // Populate curriculum
+            const modulesList = document.getElementById('modules-list');
+            modulesList.innerHTML = courseData.curriculum.map((module, moduleIndex) => `
+                <div class="module">
+                    <div class="module-header">
+                        <h4>${module.title}</h4>
+                        <span class="module-lessons">${module.lessons.length} lessons</span>
+                    </div>
+                    <div class="lessons-list">
+                        ${module.lessons.map((lesson, lessonIndex) => `
+                            <div class="lesson ${lesson.free ? 'free' : ''}">
+                                <div class="lesson-info">
+                                    <i class="fas fa-${lesson.type === 'video' ? 'play-circle' : 'file-code'}"></i>
+                                    <span class="lesson-title">${lesson.title}</span>
+                                    ${lesson.free ? '<span class="free-badge">Free</span>' : ''}
+                                </div>
+                                <div class="lesson-meta">
+                                    <span class="lesson-duration">${lesson.duration}</span>
+                                    <i class="fas fa-lock${lesson.free ? '-open' : ''}"></i>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>
+            `).join('');
+
+            // Populate reviews
+            const reviewsList = document.getElementById('reviews-list');
+            reviewsList.innerHTML = courseData.reviews.map(review => `
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">
+                            ${review.avatar}
+                        </div>
+                        <div class="reviewer-info">
+                            <h4>${review.user}</h4>
+                            <div class="review-rating">
+                                ${'★'.repeat(review.rating)}${'☆'.repeat(5 - review.rating)}
+                            </div>
+                        </div>
+                        <span class="review-date">${review.date}</span>
+                    </div>
+                    <p class="review-comment">${review.comment}</p>
+                </div>
+            `).join('');
+
+            // Populate related courses
+            const relatedCoursesGrid = document.getElementById('related-courses');
+            relatedCoursesGrid.innerHTML = relatedCourses.map(course => `
+                <div class="course-card">
+                    <div class="course-thumbnail">
+                        <div class="course-level ${course.level}">${course.level}</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">${course.category.replace('-', ' ')}</div>
+                        <h3 class="course-title">${course.title}</h3>
+                        <div class="course-meta">
+                            <div class="course-instructor">
+                                <i class="fas fa-user"></i>
+                                ${course.instructor}
+                            </div>
+                            <div class="course-rating">
+                                <i class="fas fa-star"></i>
+                                ${course.rating}
+                            </div>
+                        </div>
+                        <div class="course-price-section">
+                            <span class="course-price">$${course.price}</span>
+                        </div>
+                        <a href="course-detail.html" class="btn btn-outline" style="width: 100%; margin-top: 1rem;">
+                            View Course
+                        </a>
+                    </div>
+                </div>
+            `).join('');
+
+            // Tab functionality
+            const tabBtns = document.querySelectorAll('.tab-btn');
+            const tabPanes = document.querySelectorAll('.tab-pane');
+
+            tabBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons and panes
+                    tabBtns.forEach(b => b.classList.remove('active'));
+                    tabPanes.forEach(p => p.classList.remove('active'));
+
+                    // Add active class to clicked button and corresponding pane
+                    btn.classList.add('active');
+                    const tabId = btn.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+
+            // Enrollment functionality
+            const enrollBtn = document.getElementById('enroll-btn');
+            const wishlistBtn = document.getElementById('wishlist-btn');
+
+            enrollBtn.addEventListener('click', async function() {
+                if (!authManager.isAuthenticated) {
+                    window.location.href = 'login.html?redirect=course-detail.html';
+                    return;
+                }
+
+                try {
+                    enrollBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enrolling...';
+                    enrollBtn.disabled = true;
+
+                    // Simulate API call
+                    await new Promise(resolve => setTimeout(resolve, 2000));
+                    
+                    AppUtils.showNotification('Successfully enrolled in the course!', 'success');
+                    
+                    // Redirect to course player or dashboard
+                    setTimeout(() => {
+                        window.location.href = 'courses.html?enrolled=true';
+                    }, 1500);
+
+                } catch (error) {
+                    AppUtils.showNotification('Failed to enroll in course', 'error');
+                    enrollBtn.innerHTML = 'Enroll Now';
+                    enrollBtn.disabled = false;
+                }
+            });
+
+            wishlistBtn.addEventListener('click', function() {
+                if (!authManager.isAuthenticated) {
+                    window.location.href = 'login.html?redirect=course-detail.html';
+                    return;
+                }
+
+                const icon = wishlistBtn.querySelector('i');
+                if (icon.classList.contains('far')) {
+                    icon.classList.replace('far', 'fas');
+                    wishlistBtn.innerHTML = '<i class="fas fa-heart"></i> Added to Wishlist';
+                    AppUtils.showNotification('Course added to wishlist', 'success');
+                } else {
+                    icon.classList.replace('fas', 'far');
+                    wishlistBtn.innerHTML = '<i class="far fa-heart"></i> Add to Wishlist';
+                    AppUtils.showNotification('Course removed from wishlist', 'info');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

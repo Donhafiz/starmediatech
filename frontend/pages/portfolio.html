@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio - Star Media Tech</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-star"></i>
+                    Star Media Tech
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="consultant.html" class="nav-link">Consultant</a>
+                <a href="portfolio.html" class="nav-link active">Portfolio</a>
+                <div class="nav-auth">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                    <a href="register.html" class="nav-link register-btn">Register</a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Portfolio Hero Section -->
+    <section class="page-hero portfolio-hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-up">Our Portfolio</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Showcasing our innovative projects and successful collaborations that drive digital transformation
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Stats -->
+    <section class="portfolio-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-count="50">0</div>
+                    <div class="stat-label">Awards Won</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Filter -->
+    <section class="portfolio-filter-section">
+        <div class="container">
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web-development">Web Development</button>
+                <button class="filter-btn" data-filter="graphic-design">Graphic Design</button>
+                <button class="filter-btn" data-filter="mobile-app">Mobile Apps</button>
+                <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+            </div>
+
+            <div class="sort-controls">
+                <select id="sortProjects" class="sort-select">
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="popular">Most Popular</option>
+                    <option value="featured">Featured</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+        <div class="container">
+            <div class="portfolio-grid">
+                <!-- Web Development Projects -->
+                <div class="portfolio-item" data-category="web-development" data-aos="fade-up">
+                    <div class="portfolio-image">
+                        <img src="../assets/portfolio/web-app-1.jpg" alt="Enterprise Dashboard" onerror="this.src='../assets/portfolio/default.jpg'">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="action-btn view-details" data-project="1">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="#" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Web Development</div>
+                        <h3 class="portfolio-title">Enterprise Business Dashboard</h3>
+                        <p class="portfolio-description">
+                            Comprehensive dashboard for enterprise resource planning and real-time analytics.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="web-development" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="../assets/portfolio/web-app-2.jpg" alt="E-learning Platform" onerror="this.src='../assets/portfolio/default.jpg'">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="action-btn view-details" data-project="2">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="#" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Web Development</div>
+                        <h3 class="portfolio-title">Interactive E-learning Platform</h3>
+                        <p class="portfolio-description">
+                            Feature-rich learning management system with interactive courses and progress tracking.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graphic Design Projects -->
+                <div class="portfolio-item" data-category="graphic-design" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="../assets/portfolio/branding-1.jpg" alt="Brand Identity" onerror="this.src='../assets/portfolio/default.jpg'">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="action-btn view-details" data-project="3">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="#" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Graphic Design</div>
+                        <h3 class="portfolio-title">Modern Brand Identity</h3>
+                        <p class="portfolio-description">
+                            Complete brand identity design including logo, typography, and brand guidelines.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Adobe Illustrator</span>
+                            <span class="tech-tag">Photoshop</span>
+                            <span class="tech-tag">InDesign</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Projects -->
+                <div class="portfolio-item" data-category="mobile-app" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="../assets/portfolio/mobile-app-1.jpg" alt="Fitness App" onerror="this.src='../assets/portfolio/default.jpg'">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="action-btn view-details" data-project="4">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="#" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Mobile App</div>
+                        <h3 class="portfolio-title">Fitness Tracking Application</h3>
+                        <p class="portfolio-description">
+                            Cross-platform fitness app with workout plans, progress tracking, and social features.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redux</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce Projects -->
+                <div class="portfolio-item" data-category="ecommerce" data-aos="fade-up" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <img src="../assets/portfolio/ecommerce-1.jpg" alt="Online Store" onerror="this.src='../assets/portfolio/default.jpg'">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="action-btn view-details" data-project="5">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="#" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">E-commerce</div>
+                        <h3 class="portfolio-title">Modern E-commerce Platform</h3>
+                        <p class="portfolio-description">
+                            Fully-featured online store with inventory management and payment integration.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Shopify</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Stripe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branding Projects -->
+                <div class="portfolio-item" data-category="branding" data-aos="fade-up" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <img src="../assets/portfolio/branding-2.jpg" alt="Corporate Branding" onerror="this.src='../assets/portfolio/default.jpg'">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-actions">
+                                <button class="action-btn view-details" data-project="6">
+                                    <i class="fas fa-eye"></i>
+                                </button>
+                                <a href="#" class="action-btn">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-category">Branding</div>
+                        <h3 class="portfolio-title">Corporate Rebranding</h3>
+                        <p class="portfolio-description">
+                            Complete rebranding for established corporation including digital and print assets.
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Brand Strategy</span>
+                            <span class="tech-tag">Visual Identity</span>
+                            <span class="tech-tag">Marketing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More Button -->
+            <div class="load-more-section" data-aos="fade-up">
+                <button class="btn btn-outline" id="loadMore">
+                    <span>Load More Projects</span>
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Testimonials -->
+    <section class="portfolio-testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Client Success Stories</h2>
+                <p class="section-subtitle">What our clients say about working with us</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>
+                            "Star Media Tech transformed our online presence completely. Their attention to detail 
+                            and understanding of our business needs resulted in a website that exceeded our expectations."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="../assets/testimonials/client-1.jpg" alt="Sarah Johnson" onerror="this.src='../assets/testimonials/default.jpg'">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>CEO, TechInnovate Solutions</p>
+                            <div class="project-link">
+                                <a href="#">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>
+                            "The mobile app developed by Star Media Tech has revolutionized how we engage with 
+                            our customers. User retention increased by 60% in the first three months post-launch."
+                        </p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="../assets/testimonials/client-2.jpg" alt="Michael Chen" onerror="this.src='../assets/testimonials/default.jpg'">
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Product Manager, FitLife Apps</p>
+                            <div class="project-link">
+                                <a href="#">View Project <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="portfolio-process">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Creative Process</h2>
+                <p class="section-subtitle">How we bring ideas to life through a structured approach</p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Discovery & Strategy</h3>
+                        <p>We begin by understanding your business goals, target audience, and project requirements to create a comprehensive strategy.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Design & Prototyping</h3>
+                        <p>Our design team creates wireframes and prototypes, ensuring the user experience aligns with your business objectives.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Development & Testing</h3>
+                        <p>Using agile methodologies, we develop your project with regular testing and quality assurance at every stage.</p>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Launch & Support</h3>
+                        <p>We deploy your project and provide ongoing support to ensure optimal performance and user satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="portfolio-cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Let's discuss how we can bring your vision to life with our expertise and innovative solutions.</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>Start a Project</span>
+                        <i class="fas fa-rocket"></i>
+                    </a>
+                    <a href="consultant.html" class="btn btn-secondary">
+                        <span>Book Consultation</span>
+                        <i class="fas fa-calendar-check"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-star"></i>
+                        Star Media Tech
+                    </div>
+                    <p class="footer-description">
+                        Transforming businesses through innovative technology solutions and comprehensive digital services.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">IT Solutions</a></li>
+                        <li><a href="#">Tech Consultancy</a></li>
+                        <li><a href="#">Data Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Tech Street, Digital City</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@starmediatech.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Star Media Tech. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">Project Details</h3>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!-- Project details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/portfolio.js"></script>
+</body>
+</html>

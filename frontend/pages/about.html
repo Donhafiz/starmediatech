@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Star Media Tech</title>
+    <meta name="description" content="Learn about Star Media Tech's journey, mission, and the team behind our innovative technology solutions and digital transformation services.">
+    <meta name="keywords" content="about us, company story, mission vision, team, digital transformation, technology solutions">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <i class="fas fa-star"></i>
+                <span>Star Media Tech</span>
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <span class="progress-text">Loading...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-checkbox">
+        <label for="theme-switch" class="theme-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <span class="theme-ball"></span>
+        </label>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-star"></i>
+                    Star Media Tech
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link active">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="consultant.html" class="nav-link">Consultant</a>
+                <a href="partners.html" class="nav-link">Partners</a>
+                <div class="nav-auth">
+                    <!-- Will be populated by authManager -->
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Hero Section -->
+    <section class="page-hero about-hero">
+        <div class="hero-background">
+            <div class="particles-container" id="particles-js-about"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-badge">
+                    <span>Our Story</span>
+                </div>
+                <h1>About Star Media Tech</h1>
+                <p>Pioneering digital transformation since 2018 with innovative technology solutions that empower businesses worldwide</p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#our-story" class="btn btn-primary">
+                        <span>Our Journey</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                    <a href="#team" class="btn btn-secondary">
+                        <span>Meet Our Team</span>
+                        <i class="fas fa-users"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section id="our-story" class="our-story">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Journey</h2>
+                <p class="section-subtitle">From startup to industry leader - our story of innovation and growth</p>
+            </div>
+            <div class="story-grid">
+                <div class="story-content" data-aos="fade-right">
+                    <div class="story-text">
+                        <p>Founded in 2018, Star Media Tech began as a small startup with a big vision: to democratize technology and make cutting-edge digital solutions accessible to businesses of all sizes.</p>
+                        <p>What started as a web development agency has evolved into a comprehensive technology partner, offering everything from IT infrastructure to advanced training programs. Our commitment to excellence and innovation has driven our growth and success.</p>
+                        <p>Today, we're proud to serve clients across 25+ countries, delivering transformative solutions that drive real business results.</p>
+                    </div>
+                    <div class="milestones">
+                        <div class="milestone" data-aos="fade-up" data-aos-delay="100">
+                            <div class="milestone-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="milestone-content">
+                                <div class="milestone-year">2018</div>
+                                <div class="milestone-text">Founded with focus on web development</div>
+                            </div>
+                        </div>
+                        <div class="milestone" data-aos="fade-up" data-aos-delay="200">
+                            <div class="milestone-icon">
+                                <i class="fas fa-expand"></i>
+                            </div>
+                            <div class="milestone-content">
+                                <div class="milestone-year">2020</div>
+                                <div class="milestone-text">Expanded to IT solutions and training</div>
+                            </div>
+                        </div>
+                        <div class="milestone" data-aos="fade-up" data-aos-delay="300">
+                            <div class="milestone-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="milestone-content">
+                                <div class="milestone-year">2022</div>
+                                <div class="milestone-text">Launched comprehensive tech courses</div>
+                            </div>
+                        </div>
+                        <div class="milestone" data-aos="fade-up" data-aos-delay="400">
+                            <div class="milestone-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="milestone-content">
+                                <div class="milestone-year">2024</div>
+                                <div class="milestone-text">Serving 500+ clients globally</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-visual" data-aos="fade-left">
+                    <div class="visual-card">
+                        <div class="image-container">
+                            <img src="../assets/images/about-story.jpg" alt="Our Story" onerror="this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80'">
+                            <div class="image-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-play"></i>
+                                    <span>Watch Our Story</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="achievement-badge">
+                            <div class="badge-content">
+                                <div class="badge-number">6+</div>
+                                <div class="badge-text">Years of Excellence</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-subtitle">The principles that guide everything we do</p>
+            </div>
+            <div class="mv-grid">
+                <div class="mv-card" data-aos="fade-up">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>To empower businesses and individuals with innovative technology solutions that drive growth, enhance productivity, and create lasting digital impact.</p>
+                    <div class="mv-features">
+                        <span class="feature-tag">Innovation</span>
+                        <span class="feature-tag">Empowerment</span>
+                        <span class="feature-tag">Growth</span>
+                    </div>
+                </div>
+                <div class="mv-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To be the leading technology partner for businesses worldwide, recognized for excellence, innovation, and transformative digital solutions.</p>
+                    <div class="mv-features">
+                        <span class="feature-tag">Excellence</span>
+                        <span class="feature-tag">Leadership</span>
+                        <span class="feature-tag">Transformation</span>
+                    </div>
+                </div>
+                <div class="mv-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="mv-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>Innovation, Integrity, Excellence, Collaboration, and Customer Success guide everything we do and every decision we make.</p>
+                    <div class="mv-features">
+                        <span class="feature-tag">Integrity</span>
+                        <span class="feature-tag">Collaboration</span>
+                        <span class="feature-tag">Success</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Meet Our Leadership</h2>
+                <p class="section-subtitle">The brilliant minds driving innovation and success</p>
+            </div>
+            <div class="team-grid" id="team-grid">
+                <!-- Team members will be populated by JavaScript -->
+            </div>
+            <div class="team-cta" data-aos="fade-up">
+                <h3>Join Our Growing Team</h3>
+                <p>We're always looking for talented individuals who share our passion for technology and innovation</p>
+                <a href="careers.html" class="btn btn-outline">
+                    <span>View Open Positions</span>
+                    <i class="fas fa-briefcase"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">By The Numbers</h2>
+                <p class="section-subtitle">Our impact and achievements in the digital world</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number" data-count="500">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="stat-number" data-count="2500">0</div>
+                    <div class="stat-label">Students Trained</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number" data-count="150">0</div>
+                    <div class="stat-label">Expert Team Members</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-number" data-count="98">0</div>
+                    <div class="stat-label">Client Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content" data-aos="fade-up">
+                <h2>Ready to Start Your Project?</h2>
+                <p>Join thousands of satisfied clients who have transformed their business with our technology solutions</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary">
+                        <span>Get Started</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="consultant.html" class="btn btn-secondary">
+                        <span>Book Consultation</span>
+                        <i class="fas fa-calendar-check"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-star"></i>
+                        Star Media Tech
+                    </div>
+                    <p class="footer-description">
+                        Transforming businesses through innovative technology solutions and comprehensive digital services.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Web Development</a></li>
+                        <li><a href="services.html">Graphic Design</a></li>
+                        <li><a href="services.html">IT Solutions</a></li>
+                        <li><a href="services.html">Tech Consultancy</a></li>
+                        <li><a href="services.html">Data Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Tech Street, Digital City</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@starmediatech.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Star Media Tech. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Enhanced Team Data
+        const teamMembers = [
+            {
+                name: "Sarah Johnson",
+                position: "CEO & Founder",
+                bio: "Technology visionary with 15+ years in digital transformation. Sarah leads our strategic direction and innovation initiatives.",
+                avatar: "SJ",
+                color: "#667eea",
+                social: {
+                    linkedin: "#",
+                    twitter: "#",
+                    github: "#"
+                },
+                skills: ["Strategy", "Leadership", "Innovation"]
+            },
+            {
+                name: "Mike Chen",
+                position: "Chief Technology Officer",
+                bio: "Full-stack developer and systems architecture expert with a passion for scalable solutions and emerging technologies.",
+                avatar: "MC",
+                color: "#764ba2",
+                social: {
+                    linkedin: "#",
+                    twitter: "#",
+                    github: "#"
+                },
+                skills: ["Architecture", "Development", "DevOps"]
+            },
+            {
+                name: "Emily Rodriguez",
+                position: "Head of Design",
+                bio: "Award-winning designer with 12+ years experience creating exceptional user experiences and beautiful interfaces.",
+                avatar: "ER",
+                color: "#f093fb",
+                social: {
+                    linkedin: "#",
+                    twitter: "#",
+                    github: "#"
+                },
+                skills: ["UX/UI", "Branding", "Research"]
+            },
+            {
+                name: "David Kim",
+                position: "Lead Instructor & Education Director",
+                bio: "Educator and software engineer with 10+ years experience. David develops our curriculum and leads technical training.",
+                avatar: "DK",
+                color: "#4facfe",
+                social: {
+                    linkedin: "#",
+                    twitter: "#",
+                    github: "#"
+                },
+                skills: ["Education", "Mentoring", "Curriculum"]
+            },
+            {
+                name: "Alex Thompson",
+                position: "Head of Operations",
+                bio: "Operations expert with background in project management and business process optimization across tech industries.",
+                avatar: "AT",
+                color: "#f5576c",
+                social: {
+                    linkedin: "#",
+                    twitter: "#",
+                    github: "#"
+                },
+                skills: ["Operations", "Project Management", "Process"]
+            },
+            {
+                name: "Lisa Wang",
+                position: "Senior Developer",
+                bio: "Full-stack developer specializing in React, Node.js, and cloud technologies. Passionate about clean code and best practices.",
+                avatar: "LW",
+                color: "#2ecc71",
+                social: {
+                    linkedin: "#",
+                    twitter: "#",
+                    github: "#"
+                },
+                skills: ["React", "Node.js", "Cloud"]
+            }
+        ];
+
+        // Populate team grid with enhanced cards
+        document.addEventListener('DOMContentLoaded', function() {
+            const teamGrid = document.getElementById('team-grid');
+            if (teamGrid) {
+                teamGrid.innerHTML = teamMembers.map((member, index) => `
+                    <div class="team-card" data-aos="fade-up" data-aos-delay="${index * 100}">
+                        <div class="team-card-inner">
+                            <div class="team-avatar" style="background: linear-gradient(135deg, ${member.color}, ${member.color}99)">
+                                ${member.avatar}
+                            </div>
+                            <div class="team-info">
+                                <h3 class="team-name">${member.name}</h3>
+                                <p class="team-position">${member.position}</p>
+                                <p class="team-bio">${member.bio}</p>
+                                <div class="team-skills">
+                                    ${member.skills.map(skill => `<span class="skill-tag">${skill}</span>`).join('')}
+                                </div>
+                            </div>
+                            <div class="team-social">
+                                <a href="${member.social.linkedin}" class="social-link" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="${member.social.twitter}" class="social-link" aria-label="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="${member.social.github}" class="social-link" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Initialize enhanced counters with animation controller
+            if (window.animationController) {
+                const counters = document.querySelectorAll('.stat-number');
+                counters.forEach(counter => {
+                    const target = parseInt(counter.getAttribute('data-count'));
+                    window.animationController.animateCounter(counter, target, 2000);
+                });
+            }
+
+            // Initialize particles for about page
+            if (typeof particlesJS !== 'undefined') {
+                particlesJS('particles-js-about', {
+                    particles: {
+                        number: { value: 60, density: { enable: true, value_area: 800 } },
+                        color: { value: "#ffffff" },
+                        shape: { type: "circle" },
+                        opacity: { value: 0.3, random: true },
+                        size: { value: 3, random: true },
+                        line_linked: {
+                            enable: true,
+                            distance: 150,
+                            color: "#ffffff",
+                            opacity: 0.2,
+                            width: 1
+                        },
+                        move: {
+                            enable: true,
+                            speed: 1.5,
+                            direction: "none",
+                            random: true,
+                            straight: false,
+                            out_mode: "out",
+                            bounce: false
+                        }
+                    },
+                    interactivity: {
+                        detect_on: "canvas",
+                        events: {
+                            onhover: { enable: true, mode: "repulse" },
+                            onclick: { enable: true, mode: "push" },
+                            resize: true
+                        }
+                    },
+                    retina_detect: true
+                });
+            }
+        });
+    </script>
+</body>
+</html>

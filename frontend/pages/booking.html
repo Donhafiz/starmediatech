@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation - Star Media Tech</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-star"></i>
+                    Star Media Tech
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="consultant.html" class="nav-link">Consultant</a>
+                <a href="partners.html" class="nav-link">Partners</a>
+                <div class="nav-auth">
+                    <!-- Will be populated by authManager -->
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Booking Confirmation Section -->
+    <section class="booking-confirmation">
+        <div class="container">
+            <div class="confirmation-card" data-aos="fade-up">
+                <div class="confirmation-header">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h1>Booking Confirmed!</h1>
+                    <p>Your consultation has been successfully scheduled</p>
+                </div>
+
+                <div class="booking-details">
+                    <h3>Booking Details</h3>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="label">Consultation ID:</span>
+                            <span class="value" id="booking-id">#SMTC-2024-001</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Service Type:</span>
+                            <span class="value" id="service-type">Web Development Consultation</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Consultant:</span>
+                            <span class="value" id="consultant-name">Sarah Johnson</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Date & Time:</span>
+                            <span class="value" id="booking-date">March 15, 2024 at 2:00 PM</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Duration:</span>
+                            <span class="value" id="booking-duration">60 minutes</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Meeting Type:</span>
+                            <span class="value" id="meeting-type">Video Call</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Total Amount:</span>
+                            <span class="value price" id="booking-price">$149.00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="meeting-info">
+                    <h3>Meeting Information</h3>
+                    <div class="meeting-details">
+                        <div class="meeting-link">
+                            <i class="fas fa-video"></i>
+                            <div>
+                                <strong>Meeting Link:</strong>
+                                <a href="#" id="meeting-link">https://meet.starmediatech.com/smtc-2024-001</a>
+                            </div>
+                        </div>
+                        <div class="meeting-password">
+                            <i class="fas fa-key"></i>
+                            <div>
+                                <strong>Meeting Password:</strong>
+                                <span id="meeting-password">SMTC2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="confirmation-actions">
+                    <button class="btn btn-primary" id="add-to-calendar">
+                        <i class="fas fa-calendar-plus"></i>
+                        Add to Calendar
+                    </button>
+                    <button class="btn btn-secondary" id="download-receipt">
+                        <i class="fas fa-download"></i>
+                        Download Receipt
+                    </button>
+                    <a href="consultant.html" class="btn btn-outline">
+                        <i class="fas fa-arrow-left"></i>
+                        Back to Consultant
+                    </a>
+                </div>
+
+                <div class="confirmation-footer">
+                    <div class="reminder">
+                        <i class="fas fa-bell"></i>
+                        <p>We'll send you a reminder 24 hours and 1 hour before your consultation.</p>
+                    </div>
+                    <div class="support">
+                        <i class="fas fa-headset"></i>
+                        <p>Need help? <a href="contact.html">Contact our support team</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps Section -->
+    <section class="next-steps">
+        <div class="container">
+            <h2 data-aos="fade-up">What's Next?</h2>
+            <div class="steps-grid">
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">1</div>
+                    <h3>Prepare for Your Consultation</h3>
+                    <p>Gather any relevant materials, questions, or project details you'd like to discuss.</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">2</div>
+                    <h3>Test Your Setup</h3>
+                    <p>Ensure your camera, microphone, and internet connection are working properly.</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">3</div>
+                    <h3>Join the Meeting</h3>
+                    <p>Use the meeting link and password provided above to join 5 minutes early.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer as about.html -->
+    </footer>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get booking details from URL parameters or localStorage
+            const urlParams = new URLSearchParams(window.location.search);
+            const bookingData = JSON.parse(localStorage.getItem('lastBooking') || '{}');
+
+            // Populate booking details
+            document.getElementById('booking-id').textContent = bookingData.id || '#SMTC-2024-001';
+            document.getElementById('service-type').textContent = bookingData.serviceType || 'Web Development Consultation';
+            document.getElementById('consultant-name').textContent = bookingData.consultant || 'Sarah Johnson';
+            document.getElementById('booking-date').textContent = bookingData.date || 'March 15, 2024 at 2:00 PM';
+            document.getElementById('booking-duration').textContent = bookingData.duration || '60 minutes';
+            document.getElementById('meeting-type').textContent = bookingData.meetingType || 'Video Call';
+            document.getElementById('booking-price').textContent = bookingData.price || '$149.00';
+            document.getElementById('meeting-link').href = bookingData.meetingLink || '#';
+            document.getElementById('meeting-link').textContent = bookingData.meetingLink || 'https://meet.starmediatech.com/smtc-2024-001';
+            document.getElementById('meeting-password').textContent = bookingData.password || 'SMTC2024';
+
+            // Add to calendar functionality
+            document.getElementById('add-to-calendar').addEventListener('click', function() {
+                // Create calendar event
+                const startDate = new Date(bookingData.startTime || '2024-03-15T14:00:00');
+                const endDate = new Date(startDate.getTime() + 60 * 60000); // 60 minutes
+
+                const calendarEvent = {
+                    title: `Consultation with ${bookingData.consultant || 'Star Media Tech'}`,
+                    description: `Consultation for ${bookingData.serviceType || 'Web Development'}`,
+                    location: bookingData.meetingLink || 'Online Meeting',
+                    start: startDate,
+                    end: endDate
+                };
+
+                // Create .ics file
+                const icsContent = [
+                    'BEGIN:VCALENDAR',
+                    'VERSION:2.0',
+                    'BEGIN:VEVENT',
+                    `SUMMARY:${calendarEvent.title}`,
+                    `DESCRIPTION:${calendarEvent.description}`,
+                    `LOCATION:${calendarEvent.location}`,
+                    `DTSTART:${startDate.toISOString().replace(/[-:]/g, '').split('.')[0]}Z`,
+                    `DTEND:${endDate.toISOString().replace(/[-:]/g, '').split('.')[0]}Z`,
+                    'END:VEVENT',
+                    'END:VCALENDAR'
+                ].join('\n');
+
+                const blob = new Blob([icsContent], { type: 'text/calendar' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'consultation.ics';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+
+                AppUtils.showNotification('Calendar event downloaded', 'success');
+            });
+
+            // Download receipt functionality
+            document.getElementById('download-receipt').addEventListener('click', function() {
+                const receiptContent = `
+                    <!DOCTYPE html>
+                    <html>
+                    <head>
+                        <title>Receipt - Star Media Tech</title>
+                        <style>
+                            body { font-family: Arial, sans-serif; margin: 40px; }
+                            .header { text-align: center; margin-bottom: 30px; }
+                            .details { margin: 20px 0; }
+                            .detail-item { display: flex; justify-content: space-between; margin: 8px 0; }
+                            .total { border-top: 2px solid #000; padding-top: 10px; font-weight: bold; }
+                            .footer { margin-top: 30px; text-align: center; color: #666; }
+                        </style>
+                    </head>
+                    <body>
+                        <div class="header">
+                            <h1>Star Media Tech</h1>
+                            <p>Consultation Receipt</p>
+                        </div>
+                        <div class="details">
+                            <div class="detail-item">
+                                <span>Consultation ID:</span>
+                                <span>${bookingData.id || '#SMTC-2024-001'}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Date:</span>
+                                <span>${new Date().toLocaleDateString()}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Service:</span>
+                                <span>${bookingData.serviceType || 'Web Development Consultation'}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Consultant:</span>
+                                <span>${bookingData.consultant || 'Sarah Johnson'}</span>
+                            </div>
+                            <div class="detail-item">
+                                <span>Date & Time:</span>
+                                <span>${bookingData.date || 'March 15, 2024 at 2:00 PM'}</span>
+                            </div>
+                            <div class="detail-item total">
+                                <span>Total:</span>
+                                <span>${bookingData.price || '$149.00'}</span>
+                            </div>
+                        </div>
+                        <div class="footer">
+                            <p>Thank you for choosing Star Media Tech!</p>
+                        </div>
+                    </body>
+                    </html>
+                `;
+
+                const blob = new Blob([receiptContent], { type: 'text/html' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = 'receipt.html';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+
+                AppUtils.showNotification('Receipt downloaded', 'success');
+            });
+
+            // Clear booking data from localStorage after 24 hours
+            setTimeout(() => {
+                localStorage.removeItem('lastBooking');
+            }, 24 * 60 * 60 * 1000);
+        });
+    </script>
+</body>
+</html>

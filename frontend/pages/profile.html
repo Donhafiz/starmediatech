@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - Star Media Tech</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-star"></i>
+                    Star Media Tech
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="consultant.html" class="nav-link">Consultant</a>
+                <a href="partners.html" class="nav-link">Partners</a>
+                <div class="nav-auth">
+                    <!-- Will be populated by authManager -->
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="container">
+            <div class="profile-header" data-aos="fade-up">
+                <div class="profile-avatar">
+                    <img src="../assets/images/default-avatar.png" alt="Profile Avatar" id="profile-avatar">
+                    <button class="avatar-upload" id="avatar-upload">
+                        <i class="fas fa-camera"></i>
+                    </button>
+                </div>
+                <div class="profile-info">
+                    <h1 id="profile-name">Loading...</h1>
+                    <p class="profile-email" id="profile-email">Loading...</p>
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <div class="stat-number" id="courses-count">0</div>
+                            <div class="stat-label">Courses</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" id="consultations-count">0</div>
+                            <div class="stat-label">Consultations</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number" id="certificates-count">0</div>
+                            <div class="stat-label">Certificates</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-content">
+                <div class="profile-sidebar">
+                    <nav class="profile-nav">
+                        <a href="#personal" class="nav-item active" data-tab="personal">
+                            <i class="fas fa-user"></i>
+                            Personal Info
+                        </a>
+                        <a href="#courses" class="nav-item" data-tab="courses">
+                            <i class="fas fa-book"></i>
+                            My Courses
+                        </a>
+                        <a href="#consultations" class="nav-item" data-tab="consultations">
+                            <i class="fas fa-calendar"></i>
+                            Consultations
+                        </a>
+                        <a href="#certificates" class="nav-item" data-tab="certificates">
+                            <i class="fas fa-certificate"></i>
+                            Certificates
+                        </a>
+                        <a href="#settings" class="nav-item" data-tab="settings">
+                            <i class="fas fa-cog"></i>
+                            Settings
+                        </a>
+                    </nav>
+                </div>
+
+                <div class="profile-main">
+                    <!-- Personal Info Tab -->
+                    <div class="tab-content active" id="personal-tab">
+                        <div class="tab-header">
+                            <h2>Personal Information</h2>
+                            <button class="btn btn-outline" id="edit-profile">Edit Profile</button>
+                        </div>
+                        
+                        <div class="info-grid">
+                            <div class="info-group">
+                                <label>First Name</label>
+                                <input type="text" id="first-name" value="John" disabled>
+                            </div>
+                            <div class="info-group">
+                                <label>Last Name</label>
+                                <input type="text" id="last-name" value="Doe" disabled>
+                            </div>
+                            <div class="info-group">
+                                <label>Email</label>
+                                <input type="email" id="email" value="john.doe@example.com" disabled>
+                            </div>
+                            <div class="info-group">
+                                <label>Phone</label>
+                                <input type="tel" id="phone" value="+1 (555) 123-4567" disabled>
+                            </div>
+                            <div class="info-group full-width">
+                                <label>Bio</label>
+                                <textarea id="bio" disabled>Passionate about technology and continuous learning.</textarea>
+                            </div>
+                            <div class="info-group full-width">
+                                <label>Skills</label>
+                                <div class="skills-tags" id="skills-tags">
+                                    <span class="skill-tag">Web Development</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                    <span class="skill-tag">React</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links-section">
+                            <h3>Social Links</h3>
+                            <div class="social-links-grid">
+                                <div class="social-link-input">
+                                    <i class="fab fa-linkedin"></i>
+                                    <input type="url" placeholder="LinkedIn Profile" id="linkedin" disabled>
+                                </div>
+                                <div class="social-link-input">
+                                    <i class="fab fa-github"></i>
+                                    <input type="url" placeholder="GitHub Profile" id="github" disabled>
+                                </div>
+                                <div class="social-link-input">
+                                    <i class="fab fa-twitter"></i>
+                                    <input type="url" placeholder="Twitter Profile" id="twitter" disabled>
+                                </div>
+                                <div class="social-link-input">
+                                    <i class="fas fa-globe"></i>
+                                    <input type="url" placeholder="Personal Website" id="website" disabled>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- My Courses Tab -->
+                    <div class="tab-content" id="courses-tab">
+                        <div class="tab-header">
+                            <h2>My Courses</h2>
+                            <a href="courses.html" class="btn btn-primary">Browse Courses</a>
+                        </div>
+                        
+                        <div class="courses-grid" id="my-courses-grid">
+                            <!-- Courses will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Consultations Tab -->
+                    <div class="tab-content" id="consultations-tab">
+                        <div class="tab-header">
+                            <h2>My Consultations</h2>
+                            <a href="consultant.html" class="btn btn-primary">Book Consultation</a>
+                        </div>
+                        
+                        <div class="consultations-list" id="consultations-list">
+                            <!-- Consultations will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Certificates Tab -->
+                    <div class="tab-content" id="certificates-tab">
+                        <div class="tab-header">
+                            <h2>My Certificates</h2>
+                        </div>
+                        
+                        <div class="certificates-grid" id="certificates-grid">
+                            <!-- Certificates will be populated by JavaScript -->
+                        </div>
+                    </div>
+
+                    <!-- Settings Tab -->
+                    <div class="tab-content" id="settings-tab">
+                        <div class="tab-header">
+                            <h2>Account Settings</h2>
+                        </div>
+                        
+                        <div class="settings-sections">
+                            <div class="settings-section">
+                                <h3>Notification Preferences</h3>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Email Notifications</h4>
+                                        <p>Receive updates about your courses and consultations</p>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" id="email-notifications" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Push Notifications</h4>
+                                        <p>Get instant notifications for important updates</p>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" id="push-notifications" checked>
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="settings-section">
+                                <h3>Security</h3>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Change Password</h4>
+                                        <p>Update your account password</p>
+                                    </div>
+                                    <button class="btn btn-outline" id="change-password-btn">Change Password</button>
+                                </div>
+                                <div class="setting-item">
+                                    <div class="setting-info">
+                                        <h4>Two-Factor Authentication</h4>
+                                        <p>Add an extra layer of security to your account</p>
+                                    </div>
+                                    <label class="switch">
+                                        <input type="checkbox" id="two-factor-auth">
+                                        <span class="slider"></span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="settings-section">
+                                <h3>Danger Zone</h3>
+                                <div class="danger-actions">
+                                    <button class="btn btn-danger" id="delete-account">
+                                        <i class="fas fa-trash"></i>
+                                        Delete Account
+                                    </button>
+                                    <p class="danger-note">This action cannot be undone. All your data will be permanently deleted.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Change Password Modal -->
+    <div class="modal" id="password-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Change Password</h3>
+                <button class="modal-close" id="password-modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="password-form">
+                    <div class="form-group">
+                        <label>Current Password</label>
+                        <input type="password" id="current-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label>New Password</label>
+                        <input type="password" id="new-password" required minlength="6">
+                    </div>
+                    <div class="form-group">
+                        <label>Confirm New Password</label>
+                        <input type="password" id="confirm-password" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn-outline" id="cancel-password">Cancel</button>
+                        <button type="submit" class="btn btn-primary">Update Password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Same footer as about.html -->
+    </footer>
+
+    <script src="../js/api.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        document.addEventListener('DOMContentLoaded', async function() {
+            // Check authentication
+            if (!authManager.isAuthenticated) {
+                window.location.href = 'login.html?redirect=profile.html';
+                return;
+            }
+
+            // Load user data
+            await loadUserData();
+            await loadUserCourses();
+            await loadUserConsultations();
+            await loadUserCertificates();
+
+            // Initialize tab functionality
+            initializeTabs();
+
+            // Initialize edit functionality
+            initializeEditMode();
+
+            // Initialize settings
+            initializeSettings();
+
+            // Initialize modals
+            initializeModals();
+        });
+
+        async function loadUserData() {
+            try {
+                const response = await apiClient.auth.getProfile();
+                const user = response.data.user;
+                
+                document.getElementById('profile-name').textContent = `${user.firstName} ${user.lastName}`;
+                document.getElementById('profile-email').textContent = user.email;
+                document.getElementById('first-name').value = user.firstName;
+                document.getElementById('last-name').value = user.lastName;
+                document.getElementById('email').value = user.email;
+                document.getElementById('phone').value = user.phone || '';
+                document.getElementById('bio').value = user.bio || '';
+                
+                if (user.avatar?.url) {
+                    document.getElementById('profile-avatar').src = user.avatar.url;
+                }
+
+                // Load skills
+                if (user.skills && user.skills.length > 0) {
+                    const skillsTags = document.getElementById('skills-tags');
+                    skillsTags.innerHTML = user.skills.map(skill => 
+                        `<span class="skill-tag">${skill}</span>`
+                    ).join('');
+                }
+
+                // Load social links
+                if (user.socialLinks) {
+                    document.getElementById('linkedin').value = user.socialLinks.linkedin || '';
+                    document.getElementById('github').value = user.socialLinks.github || '';
+                    document.getElementById('twitter').value = user.socialLinks.twitter || '';
+                    document.getElementById('website').value = user.socialLinks.website || '';
+                }
+
+            } catch (error) {
+                console.error('Error loading user data:', error);
+                AppUtils.showNotification('Failed to load profile data', 'error');
+            }
+        }
+
+        async function loadUserCourses() {
+            try {
+                const response = await apiClient.users.getEnrollments();
+                const enrollments = response.data.enrollments;
+                
+                document.getElementById('courses-count').textContent = enrollments.length;
+                
+                const coursesGrid = document.getElementById('my-courses-grid');
+                if (enrollments.length === 0) {
+                    coursesGrid.innerHTML = `
+                        <div class="empty-state">
+                            <i class="fas fa-book-open"></i>
+                            <h3>No courses yet</h3>
+                            <p>Start your learning journey by enrolling in a course</p>
+                            <a href="courses.html" class="btn btn-primary">Browse Courses</a>
+                        </div>
+                    `;
+                } else {
+                    coursesGrid.innerHTML = enrollments.map(enrollment => `
+                        <div class="course-card">
+                            <div class="course-thumbnail">
+                                <img src="${enrollment.course.thumbnail?.url || '../assets/images/courses/default.jpg'}" 
+                                     alt="${enrollment.course.title}">
+                                <div class="course-progress">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: ${enrollment.progress || 0}%"></div>
+                                    </div>
+                                    <span>${enrollment.progress || 0}% Complete</span>
+                                </div>
+                            </div>
+                            <div class="course-content">
+                                <div class="course-category">${enrollment.course.category}</div>
+                                <h3 class="course-title">${enrollment.course.title}</h3>
+                                <div class="course-meta">
+                                    <div class="course-instructor">
+                                        <i class="fas fa-user"></i>
+                                        ${enrollment.course.instructor.firstName} ${enrollment.course.instructor.lastName}
+                                    </div>
+                                </div>
+                                <a href="course-detail.html?id=${enrollment.course._id}" class="btn btn-outline">
+                                    Continue Learning
+                                </a>
+                            </div>
+                        </div>
+                    `).join('');
+                }
+            } catch (error) {
+                console.error('Error loading user courses:', error);
+            }
+        }
+
+        async function loadUserConsultations() {
+            try {
+                const response = await apiClient.users.getConsultations();
+                const consultations = response.data.consultations;
+                
+                document.getElementById('consultations-count').textContent = consultations.length;
+                
+                const consultationsList = document.getElementById('consultations-list');
+                if (consultations.length === 0) {
+                    consultationsList.innerHTML = `
+                        <div class="empty-state">
+                            <i class="fas fa-calendar"></i>
+                            <h3>No consultations yet</h3>
+                            <p>Book your first consultation with our experts</p>
+                            <a href="consultant.html" class="btn btn-primary">Book Consultation</a>
+                        </div>
+                    `;
+                } else {
+                    consultationsList.innerHTML = consultations.map(consultation => `
+                        <div class="consultation-card ${consultation.status}">
+                            <div class="consultation-header">
+                                <h4>${consultation.title}</h4>
+                                <span class="status-badge ${consultation.status}">${consultation.status}</span>
+                            </div>
+                            <div class="consultation-details">
+                                <div class="detail">
+                                    <i class="fas fa-user"></i>
+                                    <span>${consultation.consultant.firstName} ${consultation.consultant.lastName}</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>${new Date(consultation.scheduledDate).toLocaleDateString()}</span>
+                                </div>
+                                <div class="detail">
+                                    <i class="fas fa-clock"></i>
+                                    <span>${consultation.duration} minutes</span>
+                                </div>
+                            </div>
+                            <div class="consultation-actions">
+                                ${consultation.status === 'confirmed' ? `
+                                    <a href="${consultation.meetingLink}" class="btn btn-primary" target="_blank">
+                                        Join Meeting
+                                    </a>
+                                ` : ''}
+                                <button class="btn btn-outline view-details" data-id="${consultation._id}">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    `).join('');
+                }
+            } catch (error) {
+                console.error('Error loading user consultations:', error);
+            }
+        }
+
+        async function loadUserCertificates() {
+            // Mock data for certificates
+            const certificates = [
+                {
+                    id: 1,
+                    title: 'Advanced Web Development',
+                    issueDate: '2024-01-15',
+                    instructor: 'Sarah Johnson'
+                },
+                {
+                    id: 2,
+                    title: 'Photoshop Masterclass',
+                    issueDate: '2024-02-20',
+                    instructor: 'Mike Chen'
+                }
+            ];
+            
+            document.getElementById('certificates-count').textContent = certificates.length;
+            
+            const certificatesGrid = document.getElementById('certificates-grid');
+            if (certificates.length === 0) {
+                certificatesGrid.innerHTML = `
+                    <div class="empty-state">
+                        <i class="fas fa-certificate"></i>
+                        <h3>No certificates yet</h3>
+                        <p>Complete courses to earn certificates</p>
+                        <a href="courses.html" class="btn btn-primary">Browse Courses</a>
+                    </div>
+                `;
+            } else {
+                certificatesGrid.innerHTML = certificates.map(cert => `
+                    <div class="certificate-card">
+                        <div class="certificate-header">
+                            <i class="fas fa-certificate"></i>
+                            <h4>${cert.title}</h4>
+                        </div>
+                        <div class="certificate-details">
+                            <div class="detail">
+                                <strong>Instructor:</strong>
+                                <span>${cert.instructor}</span>
+                            </div>
+                            <div class="detail">
+                                <strong>Issued:</strong>
+                                <span>${new Date(cert.issueDate).toLocaleDateString()}</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline download-certificate" data-id="${cert.id}">
+                            <i class="fas fa-download"></i>
+                            Download
+                        </button>
+                    </div>
+                `).join('');
+            }
+        }
+
+        function initializeTabs() {
+            const navItems = document.querySelectorAll('.nav-item');
+            const tabContents = document.querySelectorAll('.tab-content');
+
+            navItems.forEach(item => {
+                item.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    
+                    // Remove active class from all items and contents
+                    navItems.forEach(nav => nav.classList.remove('active'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked item and corresponding content
+                    item.classList.add('active');
+                    const tabId = item.getAttribute('data-tab') + '-tab';
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+        }
+
+        function initializeEditMode() {
+            const editBtn = document.getElementById('edit-profile');
+            let isEditing = false;
+
+            editBtn.addEventListener('click', function() {
+                isEditing = !isEditing;
+                const inputs = document.querySelectorAll('#personal-tab input, #personal-tab textarea');
+                
+                if (isEditing) {
+                    // Enable editing
+                    inputs.forEach(input => input.disabled = false);
+                    editBtn.textContent = 'Save Changes';
+                    editBtn.classList.remove('btn-outline');
+                    editBtn.classList.add('btn-primary');
+                } else {
+                    // Save changes
+                    saveProfileChanges();
+                    inputs.forEach(input => input.disabled = true);
+                    editBtn.textContent = 'Edit Profile';
+                    editBtn.classList.remove('btn-primary');
+                    editBtn.classList.add('btn-outline');
+                }
+            });
+
+            async function saveProfileChanges() {
+                try {
+                    const profileData = {
+                        firstName: document.getElementById('first-name').value,
+                        lastName: document.getElementById('last-name').value,
+                        phone: document.getElementById('phone').value,
+                        bio: document.getElementById('bio').value,
+                        socialLinks: {
+                            linkedin: document.getElementById('linkedin').value,
+                            github: document.getElementById('github').value,
+                            twitter: document.getElementById('twitter').value,
+                            website: document.getElementById('website').value
+                        }
+                    };
+
+                    await apiClient.auth.updateProfile(profileData);
+                    AppUtils.showNotification('Profile updated successfully', 'success');
+                    
+                    // Update displayed name
+                    document.getElementById('profile-name').textContent = 
+                        `${profileData.firstName} ${profileData.lastName}`;
+
+                } catch (error) {
+                    console.error('Error updating profile:', error);
+                    AppUtils.showNotification('Failed to update profile', 'error');
+                }
+            }
+        }
+
+        function initializeSettings() {
+            // Load saved settings
+            const savedSettings = JSON.parse(localStorage.getItem('userSettings') || '{}');
+            document.getElementById('email-notifications').checked = savedSettings.emailNotifications !== false;
+            document.getElementById('push-notifications').checked = savedSettings.pushNotifications !== false;
+            document.getElementById('two-factor-auth').checked = savedSettings.twoFactorAuth || false;
+
+            // Save settings on change
+            document.getElementById('email-notifications').addEventListener('change', saveSettings);
+            document.getElementById('push-notifications').addEventListener('change', saveSettings);
+            document.getElementById('two-factor-auth').addEventListener('change', saveSettings);
+
+            function saveSettings() {
+                const settings = {
+                    emailNotifications: document.getElementById('email-notifications').checked,
+                    pushNotifications: document.getElementById('push-notifications').checked,
+                    twoFactorAuth: document.getElementById('two-factor-auth').checked
+                };
+                localStorage.setItem('userSettings', JSON.stringify(settings));
+                AppUtils.showNotification('Settings saved', 'success');
+            }
+
+            // Change password button
+            document.getElementById('change-password-btn').addEventListener('click', function() {
+                document.getElementById('password-modal').style.display = 'flex';
+            });
+
+            // Delete account button
+            document.getElementById('delete-account').addEventListener('click', function() {
+                if (confirm('Are you sure you want to delete your account? This action cannot be undone.')) {
+                    // Implement account deletion
+                    AppUtils.showNotification('Account deletion feature coming soon', 'info');
+                }
+            });
+        }
+
+        function initializeModals() {
+            const passwordModal = document.getElementById('password-modal');
+            const closeBtn = document.getElementById('password-modal-close');
+            const cancelBtn = document.getElementById('cancel-password');
+            const passwordForm = document.getElementById('password-form');
+
+            // Close modal events
+            [closeBtn, cancelBtn].forEach(btn => {
+                btn.addEventListener('click', () => {
+                    passwordModal.style.display = 'none';
+                    passwordForm.reset();
+                });
+            });
+
+            // Close modal when clicking outside
+            passwordModal.addEventListener('click', (e) => {
+                if (e.target === passwordModal) {
+                    passwordModal.style.display = 'none';
+                    passwordForm.reset();
+                }
+            });
+
+            // Password form submission
+            passwordForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const currentPassword = document.getElementById('current-password').value;
+                const newPassword = document.getElementById('new-password').value;
+                const confirmPassword = document.getElementById('confirm-password').value;
+
+                if (newPassword !== confirmPassword) {
+                    AppUtils.showNotification('New passwords do not match', 'error');
+                    return;
+                }
+
+                if (newPassword.length < 6) {
+                    AppUtils.showNotification('Password must be at least 6 characters', 'error');
+                    return;
+                }
+
+                try {
+                    await apiClient.auth.changePassword({
+                        currentPassword,
+                        newPassword
+                    });
+
+                    AppUtils.showNotification('Password updated successfully', 'success');
+                    passwordModal.style.display = 'none';
+                    passwordForm.reset();
+
+                } catch (error) {
+                    AppUtils.showNotification('Failed to update password', 'error');
+                }
+            });
+        }
+    </script>
+</body>
+</html>

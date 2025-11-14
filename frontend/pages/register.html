@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join Star Media Tech — Register Today</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/auth.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <meta name="theme-color" content="#2c3e50">
+</head>
+<body class="auth-page">
+  <!-- Animated Background -->
+  <div class="auth-background">
+    <canvas id="auth-particles"></canvas>
+    <div class="gradient-overlay"></div>
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
+  </div>
+
+  <main class="auth-container">
+    <!-- Left Panel - Registration Form -->
+    <div class="auth-panel register-panel active">
+      <div class="auth-form-container">
+        <div class="auth-header">
+          <a href="../index.html" class="auth-logo">
+            <i class="fas fa-star"></i>
+            Star Media Tech
+          </a>
+          <div class="auth-welcome">
+            <h1 id="register-title">Begin Your Journey</h1>
+            <p class="auth-subtitle">Join our community of innovators and start transforming your digital future today</p>
+          </div>
+        </div>
+
+        <form id="registerForm" class="auth-form" novalidate>
+          <div class="form-message" id="registerMessage" role="alert" aria-live="polite"></div>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <div class="input-container">
+                <i class="fas fa-user input-icon"></i>
+                <input id="name" name="name" class="input-field" type="text" required autocomplete="name" placeholder=" " aria-describedby="nameHelp">
+                <label for="name" class="input-label">Full Name</label>
+                <div class="input-underline"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-container">
+              <i class="fas fa-envelope input-icon"></i>
+              <input id="email" name="email" class="input-field" type="email" required autocomplete="email" placeholder=" " aria-describedby="emailHelp">
+              <label for="email" class="input-label">Email Address</label>
+              <div class="input-underline"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <div class="input-container">
+                <i class="fas fa-lock input-icon"></i>
+                <input id="password" name="password" class="input-field" type="password" required minlength="8" autocomplete="new-password" placeholder=" " aria-describedby="passwordHelp">
+                <label for="password" class="input-label">Password</label>
+                <div class="input-underline"></div>
+                <button type="button" id="togglePassword" class="password-toggle" aria-label="Toggle password visibility">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="password-strength" id="passwordStrength">
+                <div class="strength-bar">
+                  <div class="strength-fill" data-strength="0"></div>
+                </div>
+                <span class="strength-text">Password Strength</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-container">
+                <i class="fas fa-lock input-icon"></i>
+                <input id="confirmPassword" name="confirmPassword" class="input-field" type="password" required autocomplete="new-password" placeholder=" " aria-describedby="confirmPasswordHelp">
+                <label for="confirmPassword" class="input-label">Confirm Password</label>
+                <div class="input-underline"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-container">
+              <i class="fas fa-user-tag input-icon"></i>
+              <select id="role" name="role" class="input-field select-field" aria-label="Select role">
+                <option value="student" selected>Student</option>
+                <option value="consultant">Consultant</option>
+                <option value="business">Business Client</option>
+              </select>
+              <label for="role" class="input-label">I am a</label>
+              <div class="input-underline"></div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="file-upload-container">
+              <label class="file-upload-label">
+                <i class="fas fa-camera"></i>
+                <span>Profile Photo (Optional)</span>
+                <input id="avatar" name="avatar" type="file" accept="image/*" aria-describedby="avatarHelp" hidden>
+              </label>
+              <small id="avatarHelp" class="file-upload-help">JPG, PNG or GIF • Max 2MB</small>
+              <div id="preview" class="avatar-preview"></div>
+            </div>
+          </div>
+
+          <div class="form-group terms-container">
+            <label class="checkbox-container">
+              <input id="terms" name="terms" type="checkbox" required>
+              <span class="checkmark"></span>
+              <span class="terms-text">
+                I agree to the <a href="../pages/terms.html" class="terms-link">Terms of Service</a> and <a href="../pages/privacy.html" class="terms-link">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
+
+          <button id="submitBtn" class="btn btn-primary auth-submit" type="submit">
+            <span class="btn-text">Create Account</span>
+            <i class="fas fa-arrow-right btn-icon"></i>
+            <div class="btn-loading">
+              <div class="loading-spinner"></div>
+            </div>
+          </button>
+
+          <div class="auth-divider">
+            <span>or continue with</span>
+          </div>
+
+          <div class="social-login">
+            <button type="button" class="social-btn google-btn" aria-label="Sign up with Google">
+              <i class="fab fa-google"></i>
+              Google
+            </button>
+            <button type="button" class="social-btn github-btn" aria-label="Sign up with GitHub">
+              <i class="fab fa-github"></i>
+              GitHub
+            </button>
+            <button type="button" class="social-btn linkedin-btn" aria-label="Sign up with LinkedIn">
+              <i class="fab fa-linkedin"></i>
+              LinkedIn
+            </button>
+          </div>
+        </form>
+
+        <div class="auth-footer">
+          <p>Already have an account? <a href="login.html" class="auth-link">Sign In</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panel - Benefits -->
+    <div class="benefits-panel">
+      <div class="benefits-content">
+        <div class="benefits-header">
+          <h2>Why Join Star Media Tech?</h2>
+          <p>Discover the benefits of being part of our innovative community</p>
+        </div>
+
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="benefit-content">
+              <h3>Expert-Led Courses</h3>
+              <p>Access comprehensive courses taught by industry professionals with real-world experience</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="benefit-content">
+              <h3>Career Opportunities</h3>
+              <p>Connect with top companies and explore exciting career paths in technology</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="benefit-content">
+              <h3>Vibrant Community</h3>
+              <p>Join thousands of learners and professionals in our active community forums</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <div class="benefit-content">
+              <h3>Cutting-Edge Tech</h3>
+              <p>Stay ahead with the latest technologies, tools, and industry best practices</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-preview">
+          <div class="stat">
+            <div class="stat-number">10K+</div>
+            <div class="stat-label">Active Members</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Courses</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Satisfaction Rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Success Modal -->
+  <div class="success-modal" id="successModal">
+    <div class="success-content">
+      <div class="success-animation">
+        <div class="success-check">
+          <i class="fas fa-check"></i>
+        </div>
+        <div class="success-confetti">
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+          <div class="confetti"></div>
+        </div>
+      </div>
+      <h3 id="successTitle">Welcome to Star Media Tech!</h3>
+      <p id="successMessage">Your account has been created successfully. Redirecting you to your dashboard...</p>
+      <div class="success-progress">
+        <div class="progress-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/auth-particles.js"></script>
+  <script src="../js/auth.js"></script>
+</body>
+</html>

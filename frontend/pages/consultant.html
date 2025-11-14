@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Consultant - Star Media Tech</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/consultant.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo">
+                    <i class="fas fa-star"></i>
+                    Star Media Tech
+                </a>
+            </div>
+            <div class="nav-menu">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="consultant.html" class="nav-link active">Consultant</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <div class="nav-auth">
+                    <a href="login.html" class="nav-link login-btn">Login</a>
+                    <a href="register.html" class="nav-link register-btn">Register</a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Consultant Hero Section -->
+    <section class="consultant-hero">
+        <div class="hero-background">
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-aos="fade-up">Expert Tech Consultation</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                    Get personalized guidance from our industry experts to accelerate your digital transformation journey
+                </p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                    <a href="#booking" class="btn btn-primary">
+                        <span>Book Now</span>
+                        <i class="fas fa-calendar-check"></i>
+                    </a>
+                    <a href="#consultants" class="btn btn-secondary">
+                        <span>View Experts</span>
+                        <i class="fas fa-users"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultant Stats -->
+    <section class="consultant-stats">
+        <div class="container">
+            <div class="stats-grid-consultant">
+                <div class="stat-item-consultant" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number-consultant" data-count="50">0</div>
+                    <div class="stat-label-consultant">Expert Consultants</div>
+                </div>
+                <div class="stat-item-consultant" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number-consultant" data-count="2000">0</div>
+                    <div class="stat-label-consultant">Projects Completed</div>
+                </div>
+                <div class="stat-item-consultant" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number-consultant" data-count="98">0</div>
+                    <div class="stat-label-consultant">Success Rate</div>
+                </div>
+                <div class="stat-item-consultant" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number-consultant" data-count="24">0</div>
+                    <div class="stat-label-consultant">Hour Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Progress -->
+    <section class="booking-progress" id="booking">
+        <div class="container">
+            <div class="progress-steps">
+                <div class="progress-bar" style="width: 25%;"></div>
+                <div class="progress-step">
+                    <div class="step-icon active">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="step-label active">Service</div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="step-label">Consultant</div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-icon">
+                        <i class="fas fa-calendar"></i>
+                    </div>
+                    <div class="step-label">Schedule</div>
+                </div>
+                <div class="progress-step">
+                    <div class="step-icon">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="step-label">Confirm</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Booking Section -->
+    <section class="consultant-booking">
+        <div class="booking-container">
+            <!-- Left Column - Booking Steps -->
+            <div class="booking-steps">
+                <!-- Service Selection -->
+                <div class="service-selection" data-aos="fade-right">
+                    <h2>Choose Your Service</h2>
+                    
+                    <div class="service-categories">
+                        <button class="category-btn active" data-category="all">All Services</button>
+                        <button class="category-btn" data-category="development">Development</button>
+                        <button class="category-btn" data-category="design">Design</button>
+                        <button class="category-btn" data-category="strategy">Strategy</button>
+                        <button class="category-btn" data-category="support">Support</button>
+                    </div>
+
+                    <div class="services-grid-consultant">
+                        <!-- Web Development Service -->
+                        <div class="service-option selected" data-service="web-development" data-category="development">
+                            <div class="service-option-header">
+                                <div>
+                                    <div class="service-option-title">Web Development Consultation</div>
+                                    <div class="service-option-duration">60 minutes</div>
+                                </div>
+                                <div class="service-option-price">$149</div>
+                            </div>
+                            <ul class="service-option-features">
+                                <li>Custom website architecture review</li>
+                                <li>Technology stack recommendations</li>
+                                <li>Performance optimization strategies</li>
+                                <li>SEO best practices</li>
+                            </ul>
+                        </div>
+
+                        <!-- UI/UX Design Service -->
+                        <div class="service-option" data-service="ui-ux-design" data-category="design">
+                            <div class="service-option-header">
+                                <div>
+                                    <div class="service-option-title">UI/UX Design Review</div>
+                                    <div class="service-option-duration">45 minutes</div>
+                                </div>
+                                <div class="service-option-price">$129</div>
+                            </div>
+                            <ul class="service-option-features">
+                                <li>User experience audit</li>
+                                <li>Design system evaluation</li>
+                                <li>Usability testing strategies</li>
+                                <li>Conversion optimization tips</li>
+                            </ul>
+                        </div>
+
+                        <!-- Tech Strategy Service -->
+                        <div class="service-option" data-service="tech-strategy" data-category="strategy">
+                            <div class="service-option-header">
+                                <div>
+                                    <div class="service-option-title">Technology Strategy</div>
+                                    <div class="service-option-duration">90 minutes</div>
+                                </div>
+                                <div class="service-option-price">$199</div>
+                            </div>
+                            <ul class="service-option-features">
+                                <li>Digital transformation roadmap</li>
+                                <li>Technology stack planning</li>
+                                <li>Team structure recommendations</li>
+                                <li>Budget and timeline estimation</li>
+                            </ul>
+                        </div>
+
+                        <!-- IT Support Service -->
+                        <div class="service-option" data-service="it-support" data-category="support">
+                            <div class="service-option-header">
+                                <div>
+                                    <div class="service-option-title">IT Infrastructure Review</div>
+                                    <div class="service-option-duration">75 minutes</div>
+                                </div>
+                                <div class="service-option-price">$169</div>
+                            </div>
+                            <ul class="service-option-features">
+                                <li>System architecture analysis</li>
+                                <li>Security vulnerability assessment</li>
+                                <li>Scalability planning</li>
+                                <li>Cloud migration strategies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consultant Selection -->
+                <div class="consultant-selection" data-aos="fade-right" data-aos-delay="100" id="consultants">
+                    <h2>Select Your Consultant</h2>
+                    
+                    <div class="consultant-filters">
+                        <select class="filter-select" id="expertiseFilter">
+                            <option value="">All Expertise</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="ui-ux">UI/UX Design</option>
+                            <option value="cloud">Cloud Architecture</option>
+                            <option value="security">Cybersecurity</option>
+                        </select>
+                        
+                        <select class="filter-select" id="availabilityFilter">
+                            <option value="">Any Availability</option>
+                            <option value="available-now">Available Now</option>
+                            <option value="today">Today</option>
+                            <option value="this-week">This Week</option>
+                        </select>
+                    </div>
+
+                    <div class="consultants-grid">
+                        <!-- Consultant 1 -->
+                        <div class="consultant-card selected" data-consultant="sarah-johnson" data-expertise="web-development,cloud">
+                            <div class="consultant-header">
+                                <div class="consultant-avatar">
+                                    SJ
+                                </div>
+                                <div class="consultant-info">
+                                    <div class="consultant-name">Sarah Johnson</div>
+                                    <div class="consultant-title">Senior Full-Stack Developer</div>
+                                    <div class="consultant-rating">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <span class="rating-value">4.8</span>
+                                        <span class="rating-count">(127 reviews)</span>
+                                    </div>
+                                    <div class="consultant-specialties">
+                                        <span class="specialty-tag">React</span>
+                                        <span class="specialty-tag">Node.js</span>
+                                        <span class="specialty-tag">AWS</span>
+                                        <span class="specialty-tag">MongoDB</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="consultant-availability">
+                                <div class="availability-dot"></div>
+                                Available today
+                            </div>
+                            <button class="btn-view-profile" data-consultant="sarah-johnson">
+                                View Full Profile
+                            </button>
+                        </div>
+
+                        <!-- Consultant 2 -->
+                        <div class="consultant-card" data-consultant="mike-chen" data-expertise="ui-ux,web-development">
+                            <div class="consultant-header">
+                                <div class="consultant-avatar">
+                                    MC
+                                </div>
+                                <div class="consultant-info">
+                                    <div class="consultant-name">Mike Chen</div>
+                                    <div class="consultant-title">UX Design Lead</div>
+                                    <div class="consultant-rating">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="rating-value">5.0</span>
+                                        <span class="rating-count">(89 reviews)</span>
+                                    </div>
+                                    <div class="consultant-specialties">
+                                        <span class="specialty-tag">Figma</span>
+                                        <span class="specialty-tag">User Research</span>
+                                        <span class="specialty-tag">Prototyping</span>
+                                        <span class="specialty-tag">Design Systems</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="consultant-availability">
+                                <div class="availability-dot"></div>
+                                Available in 2 hours
+                            </div>
+                            <button class="btn-view-profile" data-consultant="mike-chen">
+                                View Full Profile
+                            </button>
+                        </div>
+
+                        <!-- Consultant 3 -->
+                        <div class="consultant-card" data-consultant="dr-emily-roberts" data-expertise="security,cloud">
+                            <div class="consultant-header">
+                                <div class="consultant-avatar">
+                                    ER
+                                </div>
+                                <div class="consultant-info">
+                                    <div class="consultant-name">Dr. Emily Roberts</div>
+                                    <div class="consultant-title">Cybersecurity Expert</div>
+                                    <div class="consultant-rating">
+                                        <div class="rating-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="rating-value">5.0</span>
+                                        <span class="rating-count">(64 reviews)</span>
+                                    </div>
+                                    <div class="consultant-specialties">
+                                        <span class="specialty-tag">Security Audit</span>
+                                        <span class="specialty-tag">Penetration Testing</span>
+                                        <span class="specialty-tag">Compliance</span>
+                                        <span class="specialty-tag">Cloud Security</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="consultant-availability">
+                                <div class="availability-dot"></div>
+                                Available tomorrow
+                            </div>
+                            <button class="btn-view-profile" data-consultant="dr-emily-roberts">
+                                View Full Profile
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Calendar & Time Selection -->
+                <div class="calendar-section" data-aos="fade-right" data-aos-delay="200">
+                    <h2>Select Date & Time</h2>
+                    
+                    <div class="calendar-header">
+                        <div class="calendar-nav">
+                            <button class="calendar-nav-btn prev-month">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="current-month">February 2024</div>
+                            <button class="calendar-nav-btn next-month">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                        <div class="timezone-info">
+                            <i class="fas fa-globe"></i>
+                            Timezone: EST
+                        </div>
+                    </div>
+
+                    <div class="calendar-grid">
+                        <!-- Calendar Headers -->
+                        <div class="calendar-day-header">Sun</div>
+                        <div class="calendar-day-header">Mon</div>
+                        <div class="calendar-day-header">Tue</div>
+                        <div class="calendar-day-header">Wed</div>
+                        <div class="calendar-day-header">Thu</div>
+                        <div class="calendar-day-header">Fri</div>
+                        <div class="calendar-day-header">Sat</div>
+
+                        <!-- Calendar Days -->
+                        <div class="calendar-day disabled">28</div>
+                        <div class="calendar-day disabled">29</div>
+                        <div class="calendar-day disabled">30</div>
+                        <div class="calendar-day disabled">31</div>
+                        <div class="calendar-day">1</div>
+                        <div class="calendar-day">2</div>
+                        <div class="calendar-day">3</div>
+                        
+                        <div class="calendar-day">4</div>
+                        <div class="calendar-day">5</div>
+                        <div class="calendar-day">6</div>
+                        <div class="calendar-day">7</div>
+                        <div class="calendar-day">8</div>
+                        <div class="calendar-day today">9</div>
+                        <div class="calendar-day">10</div>
+                        
+                        <div class="calendar-day has-availability">11</div>
+                        <div class="calendar-day has-availability">12</div>
+                        <div class="calendar-day has-availability selected">13</div>
+                        <div class="calendar-day has-availability">14</div>
+                        <div class="calendar-day has-availability">15</div>
+                        <div class="calendar-day">16</div>
+                        <div class="calendar-day">17</div>
+                        
+                        <div class="calendar-day">18</div>
+                        <div class="calendar-day">19</div>
+                        <div class="calendar-day has-availability">20</div>
+                        <div class="calendar-day has-availability">21</div>
+                        <div class="calendar-day has-availability">22</div>
+                        <div class="calendar-day">23</div>
+                        <div class="calendar-day">24</div>
+                        
+                        <div class="calendar-day">25</div>
+                        <div class="calendar-day">26</div>
+                        <div class="calendar-day">27</div>
+                        <div class="calendar-day">28</div>
+                        <div class="calendar-day">29</div>
+                        <div class="calendar-day disabled">1</div>
+                        <div class="calendar-day disabled">2</div>
+                    </div>
+
+                    <div class="time-slots-section">
+                        <h3>Available Time Slots - February 13, 2024</h3>
+                        <div class="time-slots-grid">
+                            <div class="time-slot">9:00 AM</div>
+                            <div class="time-slot">9:30 AM</div>
+                            <div class="time-slot">10:00 AM</div>
+                            <div class="time-slot">10:30 AM</div>
+                            <div class="time-slot">11:00 AM</div>
+                            <div class="time-slot">11:30 AM</div>
+                            <div class="time-slot disabled">12:00 PM</div>
+                            <div class="time-slot disabled">12:30 PM</div>
+                            <div class="time-slot">1:00 PM</div>
+                            <div class="time-slot">1:30 PM</div>
+                            <div class="time-slot selected">2:00 PM</div>
+                            <div class="time-slot">2:30 PM</div>
+                            <div class="time-slot">3:00 PM</div>
+                            <div class="time-slot">3:30 PM</div>
+                            <div class="time-slot">4:00 PM</div>
+                            <div class="time-slot">4:30 PM</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form-section" data-aos="fade-right" data-aos-delay="300">
+                    <h2>Your Information</h2>
+                    
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company/Organization</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectType">Project Type</label>
+                            <select id="projectType" name="projectType">
+                                <option value="">Select project type</option>
+                                <option value="new-website">New Website</option>
+                                <option value="website-redesign">Website Redesign</option>
+                                <option value="web-application">Web Application</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="mobile-app">Mobile App</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectDescription">Project Description *</label>
+                            <textarea id="projectDescription" name="projectDescription" placeholder="Please describe your project, goals, and any specific challenges you're facing..." required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additionalNotes">Additional Notes</label>
+                            <textarea id="additionalNotes" name="additionalNotes" placeholder="Any additional information you'd like to share with the consultant..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                                <span class="checkmark"></span>
+                                I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for tech tips and updates
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Right Column - Booking Summary -->
+            <div class="booking-summary" data-aos="fade-left">
+                <h2>Booking Summary</h2>
+                
+                <div class="summary-content">
+                    <div class="summary-item">
+                        <div class="summary-label">Service</div>
+                        <div class="summary-value">Web Development Consultation</div>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <div class="summary-label">Consultant</div>
+                        <div class="summary-value">Sarah Johnson</div>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <div class="summary-label">Date & Time</div>
+                        <div class="summary-value">Feb 13, 2024 at 2:00 PM EST</div>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <div class="summary-label">Duration</div>
+                        <div class="summary-value">60 minutes</div>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <div class="summary-label">Service Fee</div>
+                        <div class="summary-value summary-price">$149.00</div>
+                    </div>
+                    
+                    <div class="summary-item">
+                        <div class="summary-label">Platform Fee</div>
+                        <div class="summary-value">$0.00</div>
+                    </div>
+                    
+                    <div class="summary-item summary-total">
+                        <div class="summary-label">Total</div>
+                        <div class="summary-value summary-price">$149.00</div>
+                    </div>
+                </div>
+
+                <div class="booking-actions">
+                    <button class="btn-book-now" id="bookNowBtn">
+                        <i class="fas fa-lock"></i>
+                        Book Consultation - $149.00
+                    </button>
+                    
+                    <button class="btn-save-draft" id="saveDraftBtn">
+                        <i class="fas fa-save"></i>
+                        Save for Later
+                    </button>
+                </div>
+
+                <div class="booking-guarantee">
+                    <div class="guarantee-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% Satisfaction Guarantee</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class="fas fa-clock"></i>
+                        <span>24/7 Support Available</span>
+                    </div>
+                    <div class="guarantee-item">
+                        <i class="fas fa-calendar-times"></i>
+                        <span>Free Rescheduling</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Simple steps to get expert consultation</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-calendar-plus"></i>
+                    </div>
+                    <h3>Book Your Session</h3>
+                    <p>Choose your service, select an expert consultant, and pick a convenient time slot that works for you.</p>
+                </div>
+
+                <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Join the Meeting</h3>
+                    <p>Connect via video call at your scheduled time. Share your screen and discuss your project in detail.</p>
+                </div>
+
+                <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Get Expert Advice</h3>
+                    <p>Receive personalized recommendations, actionable insights, and a clear roadmap for your project.</p>
+                </div>
+
+                <div class="step-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Receive Summary</h3>
+                    <p>Get a detailed consultation summary with next steps, resources, and follow-up recommendations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="consultant-faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know about our consultation services</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h4>What happens during a consultation session?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>During your consultation, you'll have a one-on-one video call with your chosen expert. You'll discuss your project goals, challenges, and requirements. The consultant will provide personalized advice, answer your questions, and help you create a clear action plan for your project.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h4>Can I reschedule or cancel my booking?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can reschedule or cancel your booking up to 24 hours before the scheduled session without any charges. Cancellations within 24 hours may be subject to a 50% fee. You can manage your bookings through your account dashboard.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h4>What if I need more time than scheduled?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you need additional time, you can discuss extending the session with your consultant during the call. Additional time is billed in 15-minute increments at a prorated rate based on the consultant's hourly fee.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h4>Do you offer ongoing consultation packages?</h4>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we offer monthly retainer packages for clients who need ongoing support. These packages include regular check-ins, priority support, and discounted rates. Contact our sales team to learn more about our retainer options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-star"></i>
+                        Star Media Tech
+                    </div>
+                    <p class="footer-description">
+                        Transforming businesses through innovative technology solutions and comprehensive digital services.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Development</a></li>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">IT Solutions</a></li>
+                        <li><a href="#">Tech Consultancy</a></li>
+                        <li><a href="#">Data Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Tech Street, Digital City</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@starmediatech.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Star Media Tech. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consultant Detail Modals -->
+    <!-- Sarah Johnson Modal -->
+    <div class="consultant-modal" id="modal-sarah-johnson">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2>Consultant Profile</h2>
+            </div>
+            <div class="modal-body">
+                <div class="consultant-detail-header">
+                    <div class="consultant-detail-avatar">
+                        SJ
+                    </div>
+                    <div class="consultant-detail-info">
+                        <div class="consultant-detail-name">Sarah Johnson</div>
+                        <div class="consultant-detail-title">Senior Full-Stack Developer & Tech Lead</div>
+                        <div class="consultant-detail-stats">
+                            <div class="detail-stat">
+                                <span class="detail-stat-number">4.8</span>
+                                <span class="detail-stat-label">Rating</span>
+                            </div>
+                            <div class="detail-stat">
+                                <span class="detail-stat-number">127</span>
+                                <span class="detail-stat-label">Sessions</span>
+                            </div>
+                            <div class="detail-stat">
+                                <span class="detail-stat-number">8</span>
+                                <span class="detail-stat-label">Years Exp</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="consultant-detail-bio">
+                    <p>Sarah is a seasoned full-stack developer with over 8 years of experience building scalable web applications for startups and enterprises. She specializes in modern JavaScript frameworks, cloud architecture, and performance optimization.</p>
+                    <p>Her expertise includes helping teams architect complex systems, migrate legacy applications to modern stacks, and implement best practices for code quality and deployment pipelines.</p>
+                </div>
+
+                <div class="consultant-detail-specialties">
+                    <h4>Areas of Expertise</h4>
+                    <div class="specialties-grid">
+                        <span class="specialty-tag-large">React & Next.js</span>
+                        <span class="specialty-tag-large">Node.js & Express</span>
+                        <span class="specialty-tag-large">AWS & Cloud Architecture</span>
+                        <span class="specialty-tag-large">MongoDB & PostgreSQL</span>
+                        <span class="specialty-tag-large">DevOps & CI/CD</span>
+                        <span class="specialty-tag-large">API Design</span>
+                        <span class="specialty-tag-large">Performance Optimization</span>
+                        <span class="specialty-tag-large">Team Leadership</span>
+                    </div>
+                </div>
+
+                <div class="consultant-detail-education">
+                    <h4>Education & Certifications</h4>
+                    <ul class="education-list">
+                        <li class="education-item">
+                            <div class="education-degree">Master of Computer Science</div>
+                            <div class="education-school">Stanford University</div>
+                            <div class="education-period">2014 - 2016</div>
+                        </li>
+                        <li class="education-item">
+                            <div class="education-degree">AWS Solutions Architect</div>
+                            <div class="education-school">Amazon Web Services</div>
+                            <div class="education-period">2020</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="consultant-detail-experience">
+                    <h4>Professional Experience</h4>
+                    <ul class="experience-list">
+                        <li class="experience-item">
+                            <div class="experience-role">Senior Tech Lead</div>
+                            <div class="experience-company">TechInnovate Solutions</div>
+                            <div class="experience-period">2020 - Present</div>
+                        </li>
+                        <li class="experience-item">
+                            <div class="experience-role">Full-Stack Developer</div>
+                            <div class="experience-company">Digital Dynamics Inc.</div>
+                            <div class="experience-period">2016 - 2020</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="modal-actions">
+                    <button class="btn btn-primary select-consultant-btn" data-consultant="sarah-johnson">
+                        <i class="fas fa-check"></i>
+                        Select Sarah
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="consultant-modal" id="booking-success-modal">
+        <div class="modal-content">
+            <div class="booking-success">
+                <div class="success-icon">
+                    <i class="fas fa-check"></i>
+                </div>
+                <h3>Booking Confirmed!</h3>
+                <p>Your consultation with <strong>Sarah Johnson</strong> has been scheduled for <strong>February 13, 2024 at 2:00 PM EST</strong>.</p>
+                <p>You will receive a confirmation email with the meeting details and calendar invite shortly.</p>
+                <div class="success-actions">
+                    <button class="btn btn-primary" id="viewBookingBtn">
+                        <i class="fas fa-calendar"></i>
+                        View My Bookings
+                    </button>
+                    <button class="btn btn-secondary" id="closeSuccessBtn">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/consultant.js"></script>
+</body>
+</html>
